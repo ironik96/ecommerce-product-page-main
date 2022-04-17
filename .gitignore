@@ -16,3 +16,4 @@
 .prettierignore
 
 node_modules/
+tailwind.default.config.js

@@ -1,3 +1,88 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Kumbh Sans", sans-serif;
+  }
+}
+
+.nav-wrapper {
+  @apply flex justify-center items-center p-4;
+}
+
+.burger-menu {
+  @apply w-4 h-4 md:hidden;
+}
+
+.nav-title {
+  @apply text-4xl font-bold ml-5 tracking-tight;
+  line-height: 100%;
+}
+
+.nav-items-wrapper {
+  @apply hidden md:block md:flex md:space-x-6 md:ml-16 md:text-Dark-grayish-blue;
+}
+
+.nav-items {
+  @apply font-bold md:font-normal md:hover:text-Very-vark-blue md:hover:underline md:hover:decoration-Orange md:hover:underline-offset-8;
+}
+
+.cart {
+  @apply w-6 h-6 mr-5 cursor-pointer fill-[#69707D] md:hover:fill-Very-vark-blue;
+}
+.avatar {
+  @apply w-6 h-6 rounded-full md:cursor-pointer md:hover:outline md:hover:outline-Orange;
+}
+
+.content-wrapper {
+  @apply flex-col md:grid md:grid-cols-2 md:p-12 md:gap-24 md:place-items-center;
+}
+
+.image {
+  @apply h-80 w-full object-cover object-top md:rounded-lg;
+}
+
+.thumbnails {
+  @apply hidden md:block md:flex md:justify-between;
+}
+
+.thumbnail-item {
+  @apply h-16 w-16 rounded cursor-pointer;
+}
+
+.thumbnail-overlay {
+  @apply absolute rounded group-hover:block inset-0 bg-white/70;
+}
+
+.image-buttons {
+  @apply w-10 h-10 absolute top-2/4 bg-White rounded-full shadow-black shadow-sm md:hidden;
+}
+
+.sneaker-details {
+  @apply text-left p-5 space-y-4;
+}
+.sneaker-company {
+  @apply tracking-widest uppercase text-Orange text-xs font-bold;
+}
+.sneaker-title {
+  @apply font-bold text-2xl;
+}
+.sneaker-description {
+  @apply text-Dark-grayish-blue;
+}
+.sneaker-price {
+  @apply flex items-center;
+}
+.sneaker-actions {
+  @apply space-y-3 md:space-y-0 md:flex md:space-x-1 md:items-center;
+}
+
+.qty {
+  @apply bg-Light-grayish-blue p-3 rounded-md flex justify-between items-center font-bold md:basis-1/3;
+}
+
+.add-cart {
+  @apply flex justify-center w-full bg-Orange rounded-md space-x-3 p-3 text-White shadow-Orange md:hover:shadow-Orange/70 shadow-md md:basis-2/3 md:hover:bg-Orange/70;
+}

@@ -4,7 +4,8 @@
   "description": "![Design preview for the E-commerce product page coding challenge](./design/desktop-preview.jpg)",
   "main": "index.js",
   "scripts": {
-    "build-css": "npx tailwindcss -i ./src/style.css -o ./public/style.css --watch"
+    "build-css": "npx tailwindcss -i ./src/style.css -o ./public/style.css --watch",
+    "final-build": "npx tailwindcss ./src/style.css -o ./public/style.css --minify"
   },
   "keywords": [],
   "author": "",
